@@ -9,7 +9,8 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate() //kamera fonksiyonlarý late update'de kullanýlýyor
     {
-        this.transform.position = Vector3.Lerp(this.transform.position, target.transform.position + distance, Time.deltaTime); // .lerp ile kameranýn smooth bir þekilde takip etmesini saðladým
+        this.transform.position = Vector3.Lerp(this.transform.position, target.transform.position + distance, Time.deltaTime); 
+        // .lerp ile kameranýn smooth bir þekilde takip etmesini saðladým
 
     }
 }
